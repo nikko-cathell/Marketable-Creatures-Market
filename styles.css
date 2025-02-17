@@ -1,0 +1,276 @@
+/* IMPORT RULES */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Outfit:wght@100..900&display=swap');
+
+/* RESEST STYLES */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* VARIABLES */
+:root {
+    --dark-pink: hsl(345, 100%, 81%);
+    --pink: hsl(0, 100%, 90%);
+    --orange: hsl(20, 100%, 87%);
+    --yellow: hsl(39, 100%, 93%);
+    --off-white: hsl(0, 100%, 97%);
+    --purple: hsl(280, 84%, 10%);
+    --red: hsl(345, 52%, 44%);
+
+    font-size: 16px;
+}
+
+/* FONT CLASSES */
+.fugaz-one-regular {
+    font-family: "Fugaz One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* <weight>: Use a value from 100 to 900 <uniquifier>: Use a unique and descriptive class name */
+  .outfit {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* BODY/SECTIONS */
+  body {
+    background-color: var(--yellow);
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pink);
+    padding: 2%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--dark-pink);
+    margin: 3%;
+    padding: 10% 2% 2% 2%;
+    border-radius: 50px 50px 10px 10px;
+  }
+
+  /* HEADINGS */
+  h1 {
+    color: var(--purple);
+    font-size: 1.13rem;
+  }
+
+  h2 {
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    color: var(--off-white);
+    -webkit-text-stroke: 6px var(--red);
+    paint-order: stroke fill;
+    stroke-linecap: round;
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 1.13rem;
+    color: var(--purple);
+    line-height: 28px;
+  }
+
+  h6 {
+    font-size: 1.13rem;
+    color: var(--purple)
+  }
+
+  blockquote {
+    margin-left: 45%;
+    margin-top: -10%;
+  }
+
+  .blockquote-2 {
+    margin-left: 100%;
+  }
+
+  /* MAIN */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  main h4 {
+    background-color: var(--dark-pink);
+    width: 45%;
+    padding: 3% 2% 3% 2%;
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(hsla(345, 100%, 81%, 0.6) 0rem 0.3rem 3px)
+  }
+
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    width: 100%;
+  }
+
+  main section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    background-color: var(--orange);
+    padding: 3%;
+  }
+
+  main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 12%;
+  }
+
+  main article h5 {
+    background-color: var(--pink);
+    width: 90%;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+    background-color: var(--pink);
+    color: var(--purple);
+    margin-top: 5%;
+    padding: 3% 2% 8% 2%;
+    border-radius: 10px;
+  }
+
+  main article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main article div p {
+    margin-top: 10%;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    background-color: var(--dark-pink);
+    padding: 3%;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer section p {
+    line-height: 28px;
+    filter: drop-shadow(hsla(345, 52%, 44%, 0.75) 0rem 0.1rem 2px);
+  }
+
+  footer section a {
+    max-width: 15%;
+    max-height: 15%;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* IMAGES */
+  #logo {
+    height: 12%;
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .banner {
+    width: 60%;
+    height: 60%;
+  }
+
+  .main-size {
+    width: 30%;
+    height: 30%;
+    background-color: var(--off-white);
+    padding: 2%;
+    border-radius: 10px;
+  }
+
+  .profiles-images {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+  }
+
+  .footer-images {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CLASSES */
+  .white-border {
+    position: absolute;
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    padding: 2%;
+    width: 45%;
+    margin-top: 1%;
+    border-radius: 10px;
+  }
+
+  .pink-header {
+    background-color: var(--dark-pink);
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+    padding: 0.5% 0% 0.5% 0%;
+    filter: drop-shadow(hsla(345, 100%, 81%, 0.6) 0rem 0.3rem 3px)
+  }
+
+  /* MISC */
+  hr {
+    border-top: 4px solid var(--pink);
+    margin-top: 1.5%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: var(--purple);
+  }
