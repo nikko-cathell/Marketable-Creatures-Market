@@ -166,6 +166,12 @@
     border-radius: 10px;
   }
 
+  .profiles img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+
   main article div {
     display: flex;
     flex-direction: row;
@@ -227,13 +233,6 @@
     background-color: var(--off-white);
     padding: 2%;
     border-radius: 10px;
-  }
-
-  .profiles-images {
-    width: 70%;
-    height: 70%;
-    border-radius: 10px;
-    margin-bottom: 2%;
   }
 
   .footer-images {
