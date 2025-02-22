@@ -49,6 +49,8 @@
   h1 {
     color: var(--purple);
     font-size: 1.13rem;
+    line-height: 20px;
+    margin-left: -45%;
   }
 
   h2 {
@@ -79,17 +81,28 @@
     color: var(--purple)
   }
 
-  blockquote {
+  span {
     margin-left: 45%;
     margin-top: -10%;
   }
 
-  .blockquote-2 {
+  .span2 {
     margin-left: 100%;
   }
 
   /* HEADER/NAV */
-  header div {
+  nav p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--purple);
+    background-color: var(--off-white);
+    width: 10%;
+    height: 25%;
+    border-radius: 5px;
+    padding: 1% 0% 1% 0%;
+  }
+
+  #banner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,9 +110,21 @@
     padding: 2%;
   }
 
+  #banner2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header div p {
+    font-size: 2.3rem;
+    font-weight: 900;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--dark-pink);
     margin: 3%;
@@ -176,7 +201,6 @@
 
   .profiles img {
     width: 80%;
-    height: 80%;
     border-radius: 10px;
   }
 
@@ -188,6 +212,13 @@
 
   main article div p {
     margin-top: 10%;
+  }
+
+  main a {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
 
   /* FOOTER */
@@ -234,8 +265,6 @@
   #logo {
     height: 15%;
     width: 15%;
-    margin-left: 2%;
-    margin-right: 2%;
   }
 
   .banner {
@@ -274,6 +303,17 @@
     border-radius: 5px;
     padding: 0.5% 0% 0.5% 0%;
     filter: drop-shadow(hsla(345, 100%, 81%, 0.6) 0rem 0.3rem 3px)
+  }
+
+
+  /* ACTIONS */
+  .button:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
+  }
+
+  .button {
+    transition: all 0.4s;
   }
 
   /* MISC */
