@@ -436,7 +436,6 @@
     header div section ul {
       display: flex;
       flex-direction: row;
-      outline: 1px solid red;
       position: relative;
       border-radius: 0px;
       color: var(--off-white);
