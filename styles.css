@@ -50,7 +50,6 @@
     color: var(--purple);
     font-size: 1.13rem;
     line-height: 20px;
-    margin-left: -45%;
   }
 
   h2 {
@@ -90,16 +89,87 @@
     margin-left: 100%;
   }
 
-  /* HEADER/NAV */
-  nav p {
+  /* RESPONSIVE NAV */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-pink);
+    margin: 3%;
+    border-radius: 10px;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header div img {
+    margin-right: 1%;
+    width: 20%;
+    padding: 2%;
+  }
+
+  nav ul li a {
+    color: var(--purple);
+    border-radius: 5px;
+    text-align: center;
+  } 
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 4% 1%;
+    font-size: 1.25rem;
+    border-top: 2px solid var(--off-white);
+    width: 100%;
+  }
+
+  .bottom-border {
+    border-bottom: 2px solid var(--off-white);
+  }
+
+  /* NAV DISPLAY */
+  #checkbox {
+    display: none;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  #checkbox:checked ~ ul {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: hsla(345, 100%, 81%, 0.95);
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 16%;
+    margin-left: -85%;
+    width: 99%;
+    z-index: 999;
+  }
+
+  /* HEADER */
+  #nav-header-combo {
+    background-color: var(--dark-pink);
+    margin: 2%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #icon {
     font-size: 1.5rem;
     text-align: center;
     color: var(--purple);
     background-color: var(--off-white);
-    width: 10%;
-    height: 25%;
     border-radius: 5px;
-    padding: 1% 0% 1% 0%;
+    padding: 20% 35%;
   }
 
   #banner {
@@ -130,21 +200,6 @@
   header div p {
     font-size: 2.3rem;
     font-weight: 900;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--dark-pink);
-    margin: 3%;
-    padding: 2%;
-    border-radius: 10px;
-  }
-
-  ul {
-    list-style-type: none;
   }
 
   /* MAIN */
@@ -273,10 +328,6 @@
   }
 
   /* IMAGES */
-  #logo {
-    height: 15%;
-    width: 15%;
-  }
 
   .banner {
     width: 60%;
@@ -296,7 +347,7 @@
     height: 100%;
   }
 
-  /* CLASSES */
+  /* MISC CLASSES */
   .white-border {
     position: absolute;
     text-align: center;
@@ -315,6 +366,9 @@
     box-shadow: rgba(255, 158, 182, 0.6) 0rem 0.3rem 5px;
   }
 
+  .center {
+    align-items: center;
+  }
 
   /* ACTIONS */
   .button:hover {
@@ -338,4 +392,111 @@
 
   a:visited {
     color: var(--purple);
+  }
+
+
+  /* MEDIA QUERIES */
+  @media screen and (min-width: 750px) {
+    #icon {
+      display: none;
+    }
+
+    .media-hide {
+      display: none;
+    }
+
+    .mobile-hide {
+      display: block;
+    }
+
+    .media-small-hide {
+      display: none;
+    }
+
+    .nav-header-combo {
+      padding: 0.5%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+
+    header div img {
+      width: 75px;
+      height: 75px;
+      padding: 5%;
+    } 
+
+    .header-sec-1 {
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    header div section ul {
+      display: flex;
+      flex-direction: row;
+      outline: 1px solid red;
+      position: relative;
+      border-radius: 0px;
+      color: var(--off-white);
+      width: 100%;
+      margin-left: -11%;
+    }
+
+    header div section ul li {
+      list-style-type: none;
+      margin-left: 3%;
+      padding: 1%;
+      width: 12vh;
+      background-color: var(--pink);
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    header div section ul li a {
+      color: var(--off-white);
+      -webkit-text-stroke: 5px var(--red);
+      paint-order: stroke;
+      stroke-linecap: round;
+      padding: 10%;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    header div section ul li a:visited {
+      color: var(--off-white);
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    header div section ul li {
+      width: 14vh;
+    }
+
+    header div section ul {
+      margin-left: 8%;
+    }
+
+    .media-small-hide {
+      display: block;
+    }
+
+    .shopping-cart {
+      width: 46px;
+      height: 46px;
+      padding: 0%;
+    }
+  }
+
+  @media screen and (min-width: 1050px) {
+    header div section ul li {
+      width: 20vh;
+      font-size: 1.25rem;
+    }
+
+    header div section ul {
+      margin-left: 5%;
+    }
   }

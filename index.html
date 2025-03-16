@@ -9,11 +9,32 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav>
-                <img src="assets/images/mcm-logo.png" alt="marketable creatures market logo" id="logo">
-                <h1 class="fugaz-one-regular">Marketable<br><span>Creatures</span><br><span class="span2">Market</span></h1>
-                <p>&#9776;</p>
-            </nav>
+            <div id="nav-header-combo">
+                <div class="center">
+                    <img src="assets/images/mcm-logo.png" alt="marketable creatures market logo">
+                    <h1 class="fugaz-one-regular">Marketable<br><span>Creatures</span><br><span class="span2">Market</span></h1>
+                </div>
+                <nav class="media-hide">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon">&#9776;</label>
+                    <ul class="outfit">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Market</a></li>
+                        <li><a href="#">Custom Creatures</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <section class="mobile-hide" id="header-sec-1">
+                    <ul id="desktop-navigation" class="fugaz-one-regular">
+                        <li><a href="#">Market</a></li>
+                        <li><a href="#">Custom</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+                <img src="assets/images/shopping-cart.png" alt="shopping cart" class="media-small-hide mobile-hide shopping-cart">
+            </div>
             <section id="banner">
                     <a href="market.html"><h2 class="fugaz-one-regular white-border button">X% Off Sale</h2></a>
                     <div id="banner2">
