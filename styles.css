@@ -252,6 +252,11 @@
     border-radius: 5px;
   }
 
+  #profiles {
+    display: flex;
+    flex-direction: column;
+  }
+
   .profiles {
     display: flex;
     flex-direction: column;
