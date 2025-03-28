@@ -104,12 +104,6 @@
     flex-direction: row;
   }
 
-  header div img {
-    margin-right: 1%;
-    width: 20%;
-    padding: 2%;
-  }
-
   nav ul li a {
     color: var(--purple);
     border-radius: 5px;
@@ -151,7 +145,7 @@
     margin-top: 16%;
     margin-left: -85%;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     animation-name: opacity;
     animation-duration: 0.3s;
   }
@@ -168,6 +162,20 @@
     justify-content: space-between;
     align-items: center;
     margin: 1% 1% 2% 1%;
+  }
+
+  #home-button {
+    width: 60%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #home-button img {
+    width: 20%;
+    height: auto;
+    left: 0;
+    padding: 2%;
   }
 
   #icon {
@@ -432,6 +440,7 @@
     width: 60%;
     border-radius: 10px;
     margin-top: 8%;
+    z-index: 999;
   }
 
   .pink-header {
@@ -500,16 +509,19 @@
       justify-content: space-between;
       }
 
-    header div img {
-      width: 75px;
-      height: 75px;
-      padding: 5%;
-    } 
+    #home-button {
+      height: 100px;
+      width: 100%;
+    }
+
+    #home-button img {
+      width: auto;
+      height: 100px;
+    }
 
     .header-sec-1 {
       display: flex;
       flex-direction: row;
-      
     }
 
     header div section ul {
@@ -520,7 +532,7 @@
       border-radius: 0px;
       color: var(--off-white);
       width: 100%;
-      margin-left: -11%;
+      left: -10%;
     }
 
     header div section ul li {
@@ -675,7 +687,7 @@
     }
 
     .profiles {
-      width: 40%;
+      width: 30%;
       text-align: center;
       background-color: var(--pink);
       color: var(--purple);
