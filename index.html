@@ -35,14 +35,31 @@
                 </section>
                 <img src="assets/images/shopping-cart.png" alt="shopping cart" class="media-small-hide mobile-hide shopping-cart">
             </div>
-            <section id="banner">
-                    <a href="market.html"><h2 class="fugaz-one-regular white-border button">X% Off Sale</h2></a>
-                    <div id="banner2">
-                        <p class="button">&lt;</p>
-                        <a href="market.html"><img src="assets/images/Tabbyback.png" alt="tabbyback creature" class="banner"></a>
-                        <p class="button">&gt;</p>
-                    </div>
-            </section>
+            <div id="carousel">
+                <a href="market.html"><h2 class="fugaz-one-regular white-border button">X% Off Sale</h2></a>
+            <div id="banner">
+                
+                <!-- Previous button -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <!-- Carousel slides -->
+                <div class="mySlides fade">
+                    <a href="market.html"><img src="assets/images/Tabbyback.png" alt="tabbyback creature"></a>
+                </div>
+                <div class="mySlides fade">
+                    <a href="market.html"><img src="assets/images/Tabbyback.png" alt="tabbyback creature"></a>
+                </div>
+                <div class="mySlides fade">
+                    <a href="market.html"><img src="assets/images/Tabbyback.png" alt="tabbyback creature"></a>
+                </div>
+                <!-- Next button -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- The dots -->
+             <div class="all-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
             <hr>
         </header>
 
@@ -131,5 +148,7 @@
                 <a href="index.html"><p>Back to top</p></a>
             </section>
         </footer>
+        <!-- Javascript -->
+         <script src="scripts/carousel.js"></script>
 </body>
 </html>
