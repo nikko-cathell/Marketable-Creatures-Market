@@ -36,6 +36,12 @@
     font-style: normal;
   }
 
+  .outfit-lite {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   /* BODY */
   body {
     background-color: var(--yellow);
@@ -67,6 +73,13 @@
     font-size: 1.25rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+  }
+
+  h3 {
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
   }
 
   h5 {
@@ -185,6 +198,11 @@
     background-color: var(--off-white);
     border-radius: 5px;
     padding: 20% 35%;
+  }
+
+  /* HEADER CONTACT */
+  .header-contact {
+    margin-bottom: -5%;
   }
 
 
@@ -377,6 +395,89 @@
     width: 100%;
   }
 
+  /* MAIN CONTACT */
+  .main-contact {
+    margin-top: 0%;
+  }
+
+  .main-contact section {
+    margin-top: 0%,
+  }
+
+  .main-contact p {
+    padding: 0% 5%;
+    font-size: 1.25rem;
+    line-height: 35px;
+  }
+
+  .main-contact ul {
+    margin: 3% 0% 0% 7%;
+  }
+
+  .main-contact ul li {
+    padding: 5%;
+    font-size: 1.25rem;
+    line-height: 35px;
+    width: 100%;
+    color: var(--purple)
+  }
+
+  /* FORM */
+  .form-container {
+    width: 83%;
+    padding: 3%;
+    border-radius: 5px;
+    background-color: var(--orange);
+    margin-top: 5%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    color: var(--purple)
+  }
+
+  form label {
+    margin: 5% 0% 1% 0%;
+  }
+
+  input[type=text], select, textarea {
+    width: 95%;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 1rem;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+
+  input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--dark-pink);
+  }
+
+  textarea {
+    height: 200px;
+    margin-bottom: 5%;
+  }
+
+  ::placeholder {
+    color: hsl(279, 18%, 50%);
+  }
+
+  input[type=submit] {
+    color: var(--off-white);
+    -webkit-text-stroke: 6px var(--red);
+    paint-order: stroke;
+    stroke-linecap: round;
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding: 2%;
+    background-color: var(--dark-pink);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   /* FOOTER */
   footer {
     display: flex;
@@ -454,6 +555,30 @@
 
   .center {
     align-items: center;
+  }
+
+  .push-down {
+    margin-bottom: 3%;
+  }
+
+  .align-left {
+    text-align: left;
+    padding-left: 2%;;
+  }
+
+  .pink-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--pink);
+    width: 83%;
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: 5%;
+  }
+
+  .no-margin-top {
+    margin-top: 0%;
   }
 
   /* ACTIONS */
