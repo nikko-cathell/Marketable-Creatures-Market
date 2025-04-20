@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Custom Creatures</title>
+</head>
+<body>
+    <header class="header-contact">
+        <div class="wrapper">
+            <div id="nav-header-combo">
+                <div class="center">
+                    <a href="index.html" id="home-button">
+                        <img src="assets/images/mcm-logo.png" alt="marketable creatures market logo">
+                        <h1 class="fugaz-one-regular">Marketable<br><span>Creatures</span><br><span class="span2">Market</span></h1>
+                    </a>
+                </div>
+                <nav class="media-hide">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon">&#9776;</label>
+                    <ul class="outfit">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Market</a></li>
+                        <li><a href="#">Custom Creatures</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <section class="mobile-hide" id="header-sec-1">
+                    <ul id="desktop-navigation" class="fugaz-one-regular">
+                        <li><a href="index.html">Market</a></li>
+                        <li><a href="#">Custom</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-custom">
+        <h3 class="fugaz-one-regular">Custom Creatures</h3>
+        <img src="assets/images/tabbyback-square.png" class="custom-tabbyback push-down">
+        <h2 class="fugaz-one-regular pink-header">How it works</h2>
+
+        <p class="outfit-lite push-down">
+            If this were a real business right here there would be a paragraph
+            and maybe a bullet point list about how custom creatures works.
+            But since it's not, please give some grace and use your imagination
+            for what it might say.
+        </p>
+
+        <!-- Dropdown Selectors -->
+        <h2 class="fugaz-one-regular pink-header">Create Your Creature!</h2>
+        <form class="outfit-lite custom-form">
+            <select id="dropdown-select" required>
+              <option class="current outfit" disabled selected >Classification</option>
+              <option class="outfit dropdown-hover" name="cute">Cute</option>
+              <option class="outfit dropdown-hover" name="elegant">Elegant</option>
+              <option class="outfit dropdown-hover" name="scary">Scary</option>
+              <option class="outfit dropdown-hover" name="silly">Silly</option>
+              <option class="outfit dropdown-hover" name="surprise">Surprise Me!</option>
+            </select>
+
+            <select id="dropdown-select" required>
+                <option class="current outfit" disabled selected >Creature Type</option>
+                <option class="outfit dropdown-hover" name="elegant">Bird</option>
+                <option class="outfit dropdown-hover" name="silly">Fish</option>
+                <option class="outfit dropdown-hover" name="cute">Mammal</option>
+                <option class="outfit dropdown-hover" name="scary">Reptile</option>
+                <option class="outfit dropdown-hover" name="surprise">Other...</option>
+            </select>
+
+            <select id="dropdown-select" required>
+                <option class="current outfit" disabled selected >Texture</option>
+                <option class="outfit dropdown-hover" name="cute">Furry</option>
+                <option class="outfit dropdown-hover" name="elegant">Scaley</option>
+                <option class="outfit dropdown-hover" name="scary">Smooth</option>
+                <option class="outfit dropdown-hover" name="scary">Quilted</option>
+            </select>
+
+            <select id="dropdown-select" class="push-down" required>
+                <option class="current outfit" disabled selected >Color type</option>
+                <option class="outfit dropdown-hover" name="scary">Muted</option>
+                <option class="outfit dropdown-hover" name="cute">Natural</option>
+                <option class="outfit dropdown-hover" name="scary">Neon</option>
+                <option class="outfit dropdown-hover" name="scary">Pastel</option>
+                <option class="outfit dropdown-hover" name="cute">Royal</option>
+                <option class="outfit dropdown-hover" name="elegant">Vibrant</option> 
+            </select>
+
+            <!-- Colors Section -->
+            <div class="custom-form-div push-down">
+                <h5 class="push-down">- Colors (choose up to 4) -</h5>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="red" name="red" value="red">
+                    <label for="red">Red</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="orange" name="orange" value="orange">
+                    <label for="orange">Orange</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="yellow" name="yellow" value="yellow">
+                    <label for="yellow">Yellow</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="green" name="green" value="green">
+                    <label for="green">Green</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="blue" name="blue" value="blue">
+                    <label for="blue">Blue</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="indigo" name="indigo" value="indigo">
+                    <label for="indigo">Indigo</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="violet" name="violet" value="violet">
+                    <label for="violet">Violet</label><br>
+                </div>
+
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="white" name="white" value="white">
+                    <label for="white">White</label><br>
+                </div>
+
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="black" name="black" value="black">
+                    <label for="black">Black</label><br>
+                </div>
+            </div>
+
+            <!-- Extras section -->
+            <div class="custom-form-div push-down">
+                <h5 class="push-down">- Extras (choose up to 2) -</h5>
+
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="flowers" name="flowers" value="flowers">
+                    <label for="flowers">Flowers</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="1horn" name="1horn" value="1horn">
+                    <label for="1horn">One Horn</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="2horns" name="2horns" value="2horns">
+                    <label for="2horns">Two Horns</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="tail" name="tail" value="tail">
+                    <label for="tail">(Extra) Tail</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="wings" name="wings" value="wings">
+                    <label for="wings">Wings</label><br>
+                </div>
+                <div class="form-align-left push-down">
+                    <input type="checkbox" id="whiskers" name="whiskers" value="whiskers">
+                    <label for="whiskers">Whiskers</label><br>
+                </div>
+            </div>
+
+            <label for="notes">Notes</label>
+            <textarea class="outfit-lite" id="notes" name="notes" placeholder="Your notes..."></textarea>
+
+            <label for="email">Email*</label>
+            <input class="outfit-lite" type="text" id="email" name="email" placeholder="Enter your email...">
+
+            <!-- Submit -->
+            <input class="fugaz-one-regular form-push-up" type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <h2 class="fugaz-one-regular">Come Visit Us!</h2>
+        <section id="media-icons">
+            <a href="#" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="footer-images button"></a>
+            <a href="#" target="_blank"><img src="assets/images/tik-tok.png" alt="tik tok" class="footer-images button"></a>
+            <a href="#" target="_blank"><img src="assets/images/x.png" alt="x" class="footer-images button"></a>
+            <a href="#" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="footer-images button"></a>
+            
+        </section>
+            <p class="outfit">mcm@company.com<br>888-888-8888</p>
+        <section class="outfit">
+            <p>
+                Credits:
+                <br>Nikko C.
+                <br>Vivian F.
+            </p>
+            <a href="custom.html"><p>Back to top</p></a>
+        </section>
+    </footer>
+</body>
+</html>

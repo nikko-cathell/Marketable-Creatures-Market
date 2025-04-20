@@ -395,6 +395,19 @@
     width: 100%;
   }
 
+  /* MAIN CUSTOM */
+  .main-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-custom p {
+    padding: 6%;
+    font-size: 1.25rem;
+    line-height: 35px;
+  }
+
   /* MAIN CONTACT */
   .main-contact {
     display: flex;
@@ -434,7 +447,7 @@
     color: var(--purple)
   }
 
-  /* FORM */
+  /* CONTACT FORM */
   form {
     display: flex;
     flex-direction: column;
@@ -484,6 +497,68 @@
     background-color: var(--dark-pink);
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  /* CUSTOM FORM */
+  .custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #dropdown-select{
+    width: 100%;
+    background-color: var(--off-white);
+    color: var(--purple);
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+
+  #dropdown-select:focus-visible {
+    border: 2px solid var(--dark-pink);
+  }
+
+  .dropdown-hover:hover {
+    background-color: var(--pink);
+  }
+  
+  #dropdown-select .current{
+    color: var(--purple);
+  }
+
+  .custom-form option {
+    color: var(--purple);
+  }
+
+  .dropdown-label {
+    font-size: 1.25rem;
+  }
+
+  .custom-form h5 {
+    font-size: 1.25rem;
+  }
+
+  .custom-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    width: 80%;
+  }
+
+  .form-align-left {
+    align-self: flex-start;
+  }
+
+  .custom-form textarea {
+    background-color: var(--off-white);
+    width: 90%;
+  }
+
+  .form-push-up {
+    margin-top: 5%;
   }
 
   /* FOOTER */
@@ -539,6 +614,13 @@
   .footer-images {
     width: 100%;
     height: 100%;
+  }
+
+  .custom-tabbyback {
+    width: 52%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 3%;
   }
 
   /* MISC CLASSES */
