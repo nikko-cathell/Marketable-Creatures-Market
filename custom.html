@@ -42,7 +42,7 @@
     <main class="main-custom">
         <h3 class="fugaz-one-regular">Custom Creatures</h3>
         <div class="custom-div">
-            <img src="assets/images/tabbyback-square-pink.png" class="custom-tabbyback push-down">
+            <img src="assets/images/tabbyback-square-pink.png" class="custom-tabbyback push-down" alt="custom creature example">
             <div class="custom-div-div">
                 <h2 class="fugaz-one-regular pink-header">How it works</h2>
 
@@ -58,40 +58,41 @@
         <h2 class="fugaz-one-regular pink-header">Create Your Creature!</h2>
         <form class="outfit-lite custom-form">
             <!-- Dropdown Selectors -->
-            <select id="dropdown-select" required>
+            <select class="dropdown-select">
               <option class="current outfit" disabled selected >Classification</option>
-              <option class="outfit dropdown-hover" name="cute">Cute</option>
-              <option class="outfit dropdown-hover" name="elegant">Elegant</option>
-              <option class="outfit dropdown-hover" name="scary">Scary</option>
-              <option class="outfit dropdown-hover" name="silly">Silly</option>
-              <option class="outfit dropdown-hover" name="surprise">Surprise Me!</option>
+              <option class="outfit dropdown-hover" id="cute">Cute</option>
+              <option class="outfit dropdown-hover" id="elegant">Elegant</option>
+              <option class="outfit dropdown-hover" id="scary">Scary</option>
+              <option class="outfit dropdown-hover" id="silly">Silly</option>
+              <option class="outfit dropdown-hover" id="surprise">Surprise Me!</option>
             </select>
 
-            <select id="dropdown-select" required>
+            <select class="dropdown-select">
                 <option class="current outfit" disabled selected >Creature Type</option>
-                <option class="outfit dropdown-hover" name="elegant">Bird</option>
-                <option class="outfit dropdown-hover" name="silly">Fish</option>
-                <option class="outfit dropdown-hover" name="cute">Mammal</option>
-                <option class="outfit dropdown-hover" name="scary">Reptile</option>
-                <option class="outfit dropdown-hover" name="surprise">Other...</option>
+                <option class="outfit dropdown-hover" id="amphibian">Amphibian</option>
+                <option class="outfit dropdown-hover" id="bird">Bird</option>
+                <option class="outfit dropdown-hover" id="fish">Fish</option>
+                <option class="outfit dropdown-hover" id="mammal">Mammal</option>
+                <option class="outfit dropdown-hover" id="reptile">Reptile</option>
+                <option class="outfit dropdown-hover" id="other-animal">Other...</option>
             </select>
 
-            <select id="dropdown-select" required>
+            <select class="dropdown-select">
                 <option class="current outfit" disabled selected >Texture</option>
-                <option class="outfit dropdown-hover" name="cute">Furry</option>
-                <option class="outfit dropdown-hover" name="elegant">Scaley</option>
-                <option class="outfit dropdown-hover" name="scary">Smooth</option>
-                <option class="outfit dropdown-hover" name="scary">Quilted</option>
+                <option class="outfit dropdown-hover" id="furry">Furry</option>
+                <option class="outfit dropdown-hover" id="scaley">Scaley</option>
+                <option class="outfit dropdown-hover" id="smooth">Smooth</option>
+                <option class="outfit dropdown-hover" id="quilted">Quilted</option>
             </select>
 
-            <select id="dropdown-select" class="push-down" required>
+            <select class="dropdown-select push-down">
                 <option class="current outfit" disabled selected >Color type</option>
-                <option class="outfit dropdown-hover" name="scary">Muted</option>
-                <option class="outfit dropdown-hover" name="cute">Natural</option>
-                <option class="outfit dropdown-hover" name="scary">Neon</option>
-                <option class="outfit dropdown-hover" name="scary">Pastel</option>
-                <option class="outfit dropdown-hover" name="cute">Royal</option>
-                <option class="outfit dropdown-hover" name="elegant">Vibrant</option> 
+                <option class="outfit dropdown-hover" id="muted">Muted</option>
+                <option class="outfit dropdown-hover" id="natural">Natural</option>
+                <option class="outfit dropdown-hover" id="neon">Neon</option>
+                <option class="outfit dropdown-hover" id="pastel">Pastel</option>
+                <option class="outfit dropdown-hover" id="royal">Royal</option>
+                <option class="outfit dropdown-hover" id="vibrant">Vibrant</option> 
             </select>
 
             <!-- Colors Section -->

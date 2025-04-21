@@ -519,7 +519,7 @@
     height: auto;
   }
 
-  #dropdown-select{
+  .dropdown-select{
     width: 100%;
     background-color: var(--off-white);
     color: var(--purple);
@@ -527,7 +527,11 @@
     font-size: 1.1rem;
   }
 
-  #dropdown-select:focus-visible {
+  .custom-form {
+    color: var(--purple);
+  }
+
+  .dropdown-select:focus-visible {
     border: 2px solid var(--dark-pink);
   }
 
@@ -535,7 +539,7 @@
     background-color: var(--pink);
   }
   
-  #dropdown-select .current{
+  .dropdown-select .current{
     color: var(--purple);
   }
 
