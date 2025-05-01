@@ -441,7 +441,7 @@
     margin-left: 2%;
   }
 
-  .main-contact p {
+  .main-contact p, .main-about p {
     padding: 0% 5%;
     font-size: 1.25rem;
     line-height: 35px;
@@ -457,6 +457,35 @@
     line-height: 35px;
     width: 100%;
     color: var(--purple)
+  }
+
+  /* ABOUT MAIN */
+  .main-about h2 {
+    margin-top: 7%;
+  }
+
+  video {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+  }
+
+  .main-about section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -1%;
+  }
+
+  .main-about ul li {
+    font-size: 1.1rem;
+    line-height: 33px;
+    list-style-type: none;
+  }
+
+  .main-about ul {
+    padding: 5%;
   }
 
   /* CONTACT FORM */
