@@ -1,10 +1,10 @@
 // Search
 function search() {
-  var input, filter, ul, li, div, h6, txtValue;
+  var input, filter, ul, li, div, div, h6, txtValue;
   input = document.getElementById('find');
   filter = input.value.toUpperCase();
   ul = document.getElementById("shopables");
-  li = ul.getElementsByTagName('div');
+  li = ul.getElementsByClassName('item-holder');
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {

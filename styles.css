@@ -523,9 +523,14 @@
     margin-bottom: 3%;
   }
 
+  #shopables li {
+    list-style-type: none;
+  }
+
   .item-holder h6 {
     margin-left: 20%;
     font-size: 1.4rem;
+    width: 100%;
   }
 
   .item-holder p {
@@ -550,6 +555,7 @@
     justify-content: center;
     background-color: var(--orange);
     width: 85%;
+    height: auto;
     padding: 3%;
     font-size: 1.25rem;
     color: var(--purple);
@@ -1065,6 +1071,26 @@
     .center {
       justify-self: center;
     }
+
+    /* SHOP PAGE */
+    .main-shop {
+      padding: 0% 3%;
+    }
+
+    .search {
+      border-radius: 60px;
+      padding: 2%;
+      margin-top: -17%;
+      width: 70%;
+    }
+
+    .shop-flex-div {
+      display: flex;
+    }
+
+    .less-margin {
+      margin-top: -20%;
+    }
   }
 
   @media screen and (min-width: 1050px) {
@@ -1186,6 +1212,10 @@
       padding: 0% 5%;
     }
 
+    .main-contact form {
+      width: 60%;
+    }
+
     .main-contact p {
       font-size: 1.5rem;
     }
@@ -1214,6 +1244,15 @@
     .main-custom form {
       width: 55%;
       padding: 2% 5%;
+    }
+
+    /* SHOP MAIN */
+    .main-shop h6 {
+      font-size: 1.7rem;
+    }
+
+    .main-shop p {
+      font-size: 1.3rem;
     }
 
     /* FORM */
