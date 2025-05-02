@@ -69,21 +69,21 @@
         </section>
 
         <!-- Contact Form -->
-        <form class="outfit no-padding general-form">
+        <form class="outfit no-padding general-form" action="scripts/contact.php" method="post">
             <div class="form-section-1">
-                <label class="no-margin-top" for="fname">Full Name*</label>
-                <input class="outfit-lite" type="text" id="fname" name="fullname" placeholder="Enter your full name...">
+                <label class="no-margin-top" for="fname">Full Name *</label>
+                <input class="outfit-lite" type="text" id="fname" name="fullName" placeholder="Enter your full name..." required>
 
-                <label for="email">Email*</label>
-                <input class="outfit-lite" type="text" id="email" name="email" placeholder="Enter your email...">
+                <label for="email">Email *</label>
+                <input class="outfit-lite" type="text" id="email" name="email" placeholder="Enter your email..." required>
 
                 <label for="phone">Phone</label>
                 <input class="outfit-lite no-bottom-margin" type="text" id="phone" name="phone" placeholder="Enter your phone number...">
             </div>
 
             <div class="form-section-2">
-                <label for="message">Message</label>
-                <textarea class="outfit-lite" id="message" name="message" placeholder="Your message..."></textarea>
+                <label for="message">Message *</label>
+                <textarea class="outfit-lite" id="message" name="message" placeholder="Your message..." required></textarea>
 
                 <input class="fugaz-one-regular" type="submit" value="Send">
             </div>
